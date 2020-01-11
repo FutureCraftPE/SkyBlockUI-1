@@ -56,7 +56,7 @@ class Main extends PluginBase implements Listener {
               $this->getServer()->getCommandMap()->dispatch($sender, $command);
               break;
               case 3:
-              $command = "f del";
+              $command = "is disband";
               $this->getServer()->getCommandMap()->dispatch($sender, $command);
               break;
               case 4:
@@ -117,7 +117,7 @@ class Main extends PluginBase implements Listener {
 			if($result === null){
 				return true;
 			}
-			$cmd = "f invite $data[0]";
+			$cmd = "is invite $data[0]";
 			$this->getServer()->getCommandMap()->dispatch($player, $cmd);
 		});
 		$form->setTitle("§b§lSkyBlockUI");
